@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    gap: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+div {
+    background-color: #e3e3e3;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div h2 {
+    font-size: large;
+    text-align: center;
+}
+
+div ul {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    list-style: none;
+}
+
+div ul li {
+    background-color: chocolate;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px solid brown;
+}
+
+.posicion-estatica .animal-diferente {
+    position: static;
+    left: 150px;
+    bottom: 50px;
+    background-color: red;
+}
+
+.posicion-relativa .animal-diferente {
+    position: relative;
+    left: 180px;
+    bottom: 70px;
+    background-color: greenyellow;
+}
+
+.posicion-absoluta-ventana .animal-diferente {
+    position: absolute;
+    left: 40px;
+    top: 0px;
+    background-color: yellow;
+}
+
+.posicion-absoluta-padre-div{
+    position: relative;
+}
+
+.posicion-absoluta-padre-div .animal-diferente {
+    position: absolute;
+    left: 40px;
+    top: 0px;
+    background-color: aqua;
+}
+
+.posicion-absoluta-padre-ul ul{
+    position: relative;
+}
+
+.posicion-absoluta-padre-ul .animal-diferente {
+    position: absolute;
+    left: 40px;
+    top: 0px;
+    background-color: blueviolet;
+}
+
+.posicion-fija .animal-diferente{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: cornflowerblue;
+}
+
+.posicion-pegajosa-body {
+    background-color: mediumspringgreen;
+    position: sticky;
+    bottom: 20px;
+}
+
+.posicion-pegajosa-padre {
+    position: relative;
+}
+
+.posicion-pegajosa-padre ul {
+    height: 200px;
+    align-items: end;
+}
+
+.posicion-pegajosa-padre .animal-diferente {
+
+    position: sticky;
+    background-color: deeppink;
+    bottom: 20px;
+}
